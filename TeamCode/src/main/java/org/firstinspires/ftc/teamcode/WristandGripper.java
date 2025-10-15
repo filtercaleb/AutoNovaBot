@@ -75,7 +75,6 @@ public class WristandGripper extends LinearOpMode {
             handServo.setPosition(close);
 
             if (runtime.seconds() >= waitTime) {
-                telemetry.update();
                 stage = 2;
                 runtime.reset();
             }
